@@ -14,6 +14,7 @@ public class App {
             library.addBook(new Book("B002", "Java: The Complete Reference", "Herbert Schildt", "Programming"));
             library.addMember(new Member("M001", "John", "0712345678"));
             library.addMember(new Member("M002", "Ravi", "0711632637"));
+            library.addMember(new Member("M002", "Hari", "0714878236"));
             new MainFrame(library).setVisible(true);
         });
     }
