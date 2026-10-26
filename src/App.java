@@ -12,7 +12,8 @@ public class App {
             Library library = new Library();
             library.addBook(new Book("B001", "Clean Code", "Robert C. Martin", "Programming"));
             library.addBook(new Book("B002", "Java: The Complete Reference", "Herbert Schildt", "Programming"));
-            library.addMember(new Member("M001", "Sample Student", "0712345678"));
+            library.addMember(new Member("M001", "John", "0712345678"));
+            library.addMember(new Member("M002", "Ravi", "0711632637"));
             new MainFrame(library).setVisible(true);
         });
     }
