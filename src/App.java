@@ -11,7 +11,7 @@ public class App {
             try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ignored) {}
             Library library = new Library();
             // =========================
-            // ADD 100 BOOKS
+            // 100 BOOKS
             // =========================
             library.addBook(new Book("B001", "Clean Code", "Robert C. Martin", "Programming"));
             library.addBook(new Book("B002", "Java: The Complete Reference", "Herbert Schildt", "Programming"));
@@ -115,7 +115,7 @@ public class App {
             library.addBook(new Book("B100", "Cracking the Coding Interview", "Gayle McDowell", "Computer Science"));
             
             // =========================
-            // ADD 50 MEMBERS
+            // 50 MEMBERS
             // =========================
             library.addMember(new Member("M001", "John", "0712345678"));
             library.addMember(new Member("M002", "Ravi", "0711632637"));
