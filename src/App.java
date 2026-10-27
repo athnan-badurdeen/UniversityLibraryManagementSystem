@@ -10,7 +10,9 @@ public class App {
         SwingUtilities.invokeLater(() -> {
             try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ignored) {}
             Library library = new Library();
-            // books
+            // =========================
+            // ADD 100 BOOKS
+            // =========================
             library.addBook(new Book("B001", "Clean Code", "Robert C. Martin", "Programming"));
             library.addBook(new Book("B002", "Java: The Complete Reference", "Herbert Schildt", "Programming"));
             library.addBook(new Book("B003", "Effective Java", "Joshua Bloch", "Programming"));
@@ -27,13 +29,94 @@ public class App {
             library.addBook(new Book("B014", "Data Structures and Algorithms in Java", "Robert Lafore", "Programming"));
             library.addBook(new Book("B015", "Computer Organization and Design", "David A. Patterson", "Computer Architecture"));
             library.addBook(new Book("B016", "Software Engineering", "Ian Sommerville", "Software Engineering"));
-            library.addBook(new Book("B017", "Web Design with HTML, CSS, JavaScript and jQuery", "Jon Duckett", "Web Development"));
+            library.addBook(new Book("B017", "HTML and CSS", "Jon Duckett", "Web Development"));
             library.addBook(new Book("B018", "Eloquent JavaScript", "Marijn Haverbeke", "Web Development"));
             library.addBook(new Book("B019", "Spring in Action", "Craig Walls", "Programming"));
-            library.addBook(new Book("B020", "Android Programming: The Big Nerd Ranch Guide", "Bill Phillips", "Mobile Development"));
+            library.addBook(new Book("B020", "Android Programming", "Bill Phillips", "Mobile Development"));
             library.addBook(new Book("B021", "Hands-On Machine Learning", "Aurelien Geron", "Machine Learning"));
             library.addBook(new Book("B022", "Cybersecurity Essentials", "Charles J. Brooks", "Cybersecurity"));
-            // members
+            library.addBook(new Book("B023", "C Programming Language", "Brian Kernighan", "Programming"));
+            library.addBook(new Book("B024", "C++ Primer", "Stanley Lippman", "Programming"));
+            library.addBook(new Book("B025", "C# in Depth", "Jon Skeet", "Programming"));
+            library.addBook(new Book("B026", "PHP and MySQL Web Development", "Luke Welling", "Web Development"));
+            library.addBook(new Book("B027", "Learning SQL", "Alan Beaulieu", "Database"));
+            library.addBook(new Book("B028", "SQL in 10 Minutes", "Ben Forta", "Database"));
+            library.addBook(new Book("B029", "Linux Command Line", "William Shotts", "Operating Systems"));
+            library.addBook(new Book("B030", "UNIX Programming Environment", "Brian Kernighan", "Operating Systems"));
+            library.addBook(new Book("B031", "Network Security Essentials", "William Stallings", "Cybersecurity"));
+            library.addBook(new Book("B032", "Computer Security Principles", "William Stallings", "Cybersecurity"));
+            library.addBook(new Book("B033", "Ethical Hacking Basics", "Michael Simpson", "Cybersecurity"));
+            library.addBook(new Book("B034", "Cloud Computing Concepts", "Thomas Erl", "Cloud Computing"));
+            library.addBook(new Book("B035", "Cloud Computing Bible", "Barrie Sosinsky", "Cloud Computing"));
+            library.addBook(new Book("B036", "Docker Deep Dive", "Nigel Poulton", "DevOps"));
+            library.addBook(new Book("B037", "Kubernetes in Action", "Marko Luksa", "DevOps"));
+            library.addBook(new Book("B038", "DevOps Handbook", "Gene Kim", "DevOps"));
+            library.addBook(new Book("B039", "Git Pocket Guide", "Richard Silverman", "Software Tools"));
+            library.addBook(new Book("B040", "Pro Git", "Scott Chacon", "Software Tools"));
+            library.addBook(new Book("B041", "JavaScript: The Definitive Guide", "David Flanagan", "Web Development"));
+            library.addBook(new Book("B042", "React in Action", "Mark Thomas", "Web Development"));
+            library.addBook(new Book("B043", "Learning React", "Alex Banks", "Web Development"));
+            library.addBook(new Book("B044", "Angular Development", "Brad Green", "Web Development"));
+            library.addBook(new Book("B045", "Vue.js in Action", "Erik Hanchett", "Web Development"));
+            library.addBook(new Book("B046", "Node.js Design Patterns", "Mario Casciaro", "Web Development"));
+            library.addBook(new Book("B047", "Express in Action", "Evan Hahn", "Web Development"));
+            library.addBook(new Book("B048", "Django for Beginners", "William Vincent", "Web Development"));
+            library.addBook(new Book("B049", "Flask Web Development", "Miguel Grinberg", "Web Development"));
+            library.addBook(new Book("B050", "Ruby on Rails Tutorial", "Michael Hartl", "Web Development"));
+            library.addBook(new Book("B051", "iOS Programming Guide", "Christian Keur", "Mobile Development"));
+            library.addBook(new Book("B052", "Flutter in Action", "Eric Windmill", "Mobile Development"));
+            library.addBook(new Book("B053", "React Native in Action", "Nader Dabit", "Mobile Development"));
+            library.addBook(new Book("B054", "Kotlin in Action", "Dmitry Jemerov", "Programming"));
+            library.addBook(new Book("B055", "Swift Programming", "Matthew Mathias", "Programming"));
+            library.addBook(new Book("B056", "Go Programming Language", "Alan Donovan", "Programming"));
+            library.addBook(new Book("B057", "Programming Rust", "Jim Blandy", "Programming"));
+            library.addBook(new Book("B058", "Scala in Action", "Nilanjan Raychaudhuri", "Programming"));
+            library.addBook(new Book("B059", "R for Data Science", "Hadley Wickham", "Data Science"));
+            library.addBook(new Book("B060", "MATLAB Programming", "Stephen Chapman", "Programming"));
+            library.addBook(new Book("B061", "Data Science from Scratch", "Joel Grus", "Data Science"));
+            library.addBook(new Book("B062", "Python for Data Analysis", "Wes McKinney", "Data Science"));
+            library.addBook(new Book("B063", "Practical Statistics for Data Scientists", "Peter Bruce", "Data Science"));
+            library.addBook(new Book("B064", "Deep Learning with Python", "Francois Chollet", "Machine Learning"));
+            library.addBook(new Book("B065", "Pattern Recognition and Machine Learning", "Christopher Bishop", "Machine Learning"));
+            library.addBook(new Book("B066", "Machine Learning Yearning", "Andrew Ng", "Machine Learning"));
+            library.addBook(new Book("B067", "Natural Language Processing", "Daniel Jurafsky", "Artificial Intelligence"));
+            library.addBook(new Book("B068", "Deep Learning", "Ian Goodfellow", "Artificial Intelligence"));
+            library.addBook(new Book("B069", "Computer Vision", "Richard Szeliski", "Artificial Intelligence"));
+            library.addBook(new Book("B070", "Robotics: Modelling and Control", "Mark Spong", "Robotics"));
+            library.addBook(new Book("B071", "Discrete Mathematics", "Kenneth Rosen", "Mathematics"));
+            library.addBook(new Book("B072", "Linear Algebra and Its Applications", "David Lay", "Mathematics"));
+            library.addBook(new Book("B073", "Calculus", "James Stewart", "Mathematics"));
+            library.addBook(new Book("B074", "Probability and Statistics", "Morris DeGroot", "Mathematics"));
+            library.addBook(new Book("B075", "Numerical Methods", "Steven Chapra", "Mathematics"));
+            library.addBook(new Book("B076", "Digital Logic Design", "M. Morris Mano", "Computer Engineering"));
+            library.addBook(new Book("B077", "Microprocessor Architecture", "Ramesh Gaonkar", "Computer Engineering"));
+            library.addBook(new Book("B078", "Embedded Systems", "Jonathan Valvano", "Computer Engineering"));
+            library.addBook(new Book("B079", "Internet of Things", "Arshdeep Bahga", "IoT"));
+            library.addBook(new Book("B080", "Arduino Programming", "Simon Monk", "IoT"));
+            library.addBook(new Book("B081", "Big Data Fundamentals", "Thomas Erl", "Big Data"));
+            library.addBook(new Book("B082", "Hadoop: The Definitive Guide", "Tom White", "Big Data"));
+            library.addBook(new Book("B083", "Learning Spark", "Jules Damji", "Big Data"));
+            library.addBook(new Book("B084", "NoSQL Distilled", "Martin Fowler", "Database"));
+            library.addBook(new Book("B085", "MongoDB: The Definitive Guide", "Shannon Bradshaw", "Database"));
+            library.addBook(new Book("B086", "Redis in Action", "Josiah Carlson", "Database"));
+            library.addBook(new Book("B087", "Oracle Database Programming", "Steven Feuerstein", "Database"));
+            library.addBook(new Book("B088", "MySQL Cookbook", "Paul DuBois", "Database"));
+            library.addBook(new Book("B089", "PostgreSQL Up and Running", "Regina Obe", "Database"));
+            library.addBook(new Book("B090", "Fundamentals of Database Systems", "Ramez Elmasri", "Database"));
+            library.addBook(new Book("B091", "Agile Software Development", "Robert C. Martin", "Software Engineering"));
+            library.addBook(new Book("B092", "Scrum: The Art of Doing Twice the Work", "Jeff Sutherland", "Project Management"));
+            library.addBook(new Book("B093", "Software Testing", "Ron Patton", "Software Engineering"));
+            library.addBook(new Book("B094", "Refactoring", "Martin Fowler", "Software Engineering"));
+            library.addBook(new Book("B095", "Code Complete", "Steve McConnell", "Software Engineering"));
+            library.addBook(new Book("B096", "Domain-Driven Design", "Eric Evans", "Software Engineering"));
+            library.addBook(new Book("B097", "Microservices Patterns", "Chris Richardson", "Software Engineering"));
+            library.addBook(new Book("B098", "Building Microservices", "Sam Newman", "Software Engineering"));
+            library.addBook(new Book("B099", "System Design Interview", "Alex Xu", "Computer Science"));
+            library.addBook(new Book("B100", "Cracking the Coding Interview", "Gayle McDowell", "Computer Science"));
+            
+            // =========================
+            // ADD 50 MEMBERS
+            // =========================
             library.addMember(new Member("M001", "John", "0712345678"));
             library.addMember(new Member("M002", "Ravi", "0711632637"));
             library.addMember(new Member("M003", "Hari", "0714878236"));
@@ -67,6 +150,23 @@ public class App {
             library.addMember(new Member("M031", "Sajani", "0701000031"));
             library.addMember(new Member("M032", "Imran", "0701000032"));
             library.addMember(new Member("M033", "Naveen", "0701000033"));
+            library.addMember(new Member("M034", "Anjali", "0701000034"));
+            library.addMember(new Member("M035", "Mohamed", "0701000035"));
+            library.addMember(new Member("M036", "Rizwan", "0701000036"));
+            library.addMember(new Member("M037", "Farhan", "0701000037"));
+            library.addMember(new Member("M038", "Ishara", "0701000038"));
+            library.addMember(new Member("M039", "Malith", "0701000039"));
+            library.addMember(new Member("M040", "Dinuka", "0701000040"));
+            library.addMember(new Member("M041", "Sanduni", "0701000041"));
+            library.addMember(new Member("M042", "Hasini", "0701000042"));
+            library.addMember(new Member("M043", "Piumi", "0701000043"));
+            library.addMember(new Member("M044", "Gayani", "0701000044"));
+            library.addMember(new Member("M045", "Akila", "0701000045"));
+            library.addMember(new Member("M046", "Thilina", "0701000046"));
+            library.addMember(new Member("M047", "Janith", "0701000047"));
+            library.addMember(new Member("M048", "Madhushan", "0701000048"));
+            library.addMember(new Member("M049", "Yasiru", "0701000049"));
+            library.addMember(new Member("M050", "Sachini", "0701000050"));
             new MainFrame(library).setVisible(true);
         });
     }
